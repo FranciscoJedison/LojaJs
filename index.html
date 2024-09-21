@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Shop</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles/output.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!--Header-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/logo.png"
+            alt="Logo"
+            Class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+            />
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white">Hardware Shop</h1>
+
+            <span class="text-white font-medium">Taguatinga Centro, Brasília - DF</span>
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á Dom - 10:00 as 19:00</span>
+            </div>
+        </div>
+    </header>
+    <!--Fim Header-->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6 text-white">
+        Computadores Pré-Montados
+    </h2>
+
+
+    <!--Inicio MENU-->
+   <div id="menu">
+
+
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+        <!--Produto-->
+        <div class="flex gap-2">
+            <img
+            src="/assets/prebuilt1.jpg"
+            alt=""
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div>
+                <p class="font-bold text-white">PC - Intel i3 9º Geração</p>
+                <p class="text-sm text-white"> Intel i3 9100F 8GB memória ram DDR4 256 GB SSD RX 580 Fonte 500w</p>
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg text-white">R$ 3599.90</p>
+                    <button 
+                    class="bg-blue-500 px-5 rounded add-to-cart-btn"
+                    data-name="PC - Intel i3 9º Geração"
+                    data-price=" 3599.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--Fim Produto-->
+
+        <!--Produto-->
+        <div class="flex gap-2">
+                <img
+                src="/assets/prebuilt2.jpg"
+                alt=""
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold text-white">PC - Ryzen 5 3º Geração</p>
+                    <p class="text-sm text-white"> Ryzen 5 5600G 16 GB memória Ram DDR4 500GB SSD fonte GTX 1660 fonte 600w</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg text-white">R$ 5580.90</p>
+                        <button 
+                        class="bg-blue-500 px-5 rounded add-to-cart-btn"
+                        data-name="PC - Ryzen 5 3º Geração"
+                        data-price="5580.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        <!--Fim Produto-->
+
+        <!--Produto-->
+        <div class="flex gap-2">
+            <img
+            src="/assets/prebuilt 3.jpg"
+            alt=""
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div>
+                <p class="font-bold text-white">PC - Intel i7 13º Geração</p>
+                <p class="text-sm text-white">Intel i7 13400 32GB memoria ram DDR5 1TB M.2 SSD RTX 4060 fonte 750w</p>
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg text-white">R$ 8680.90</p>
+                    <button 
+                    class="bg-blue-500 px-5 rounded add-to-cart-btn"
+                    data-name="PC - Intel i7 13º Geração"
+                    data-price="8680.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--Fim Produto-->
+
+        <!--Produto-->
+        <div class="flex gap-2">
+            <img
+            src="/assets/prebuilt4.jpg"
+            alt=""
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div>
+                <p class="font-bold text-white">PC - Ryzen 7 5º Geração</p>
+                <p class="text-sm text-white"> Ryzen 7 7800x3D 32 GB memoria ram DDR5 1TB M.2 SSD RTX 4060 fonte 750w</p>
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg text-white">R$ 9800.90</p>
+                    <button 
+                    class="bg-blue-500 px-5 rounded add-to-cart-btn"
+                    data-name="PC - Ryzen 7 5º Geração"
+                    data-price="9800.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--Fim Produto-->
+
+    </main>
+
+    <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl text-center text-white">Notebooks</h2>
+
+    </div>
+
+    <!--Grid bebidas-->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+        <!--Produto-->
+        <div class="flex gap-2 w-full">
+            <img
+            src="/assets/note1.jpg"
+            alt=""
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div class="w-full">
+                <p class="font-bold text-white">Notebook - Intel i3 10º Geração</p>
+                <p class="text-sm text-white"> Notebook Intel i3 10400 8GB Memoria ram DDR4 256GB SSD</p>
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg text-white">R$ 2880.90</p>
+                    <button 
+                    class="bg-blue-500 px-5 rounded add-to-cart-btn"
+                    data-name="Notebook - Intel i3 10º Geração"
+                    data-price="2880.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--Fim Produto-->
+        <div class="flex gap-2 w-full">
+            <img
+            src="/assets/note2.jpg"
+            alt=""
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div class="w-full">
+                <p class="font-bold text-white">Notebook - Ryzen 5 3º Geração</p>
+                <p class="text-sm text-white"> Ryzen 5 7520U 16GB memoria ram DDR4 500GB SSD</p>
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg text-white">R$ 4420.90</p>
+                    <button 
+                    class="bg-blue-500 px-5 rounded add-to-cart-btn"
+                    data-name="Notebook - Ryzen 5 4º Geração"
+                    data-price="4420.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fim grid bebidas-->
+
+
+    <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl text-center text-white">GPUS</h2>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+        <!--Produto-->
+        <div class="flex gap-2 w-full">
+            <img
+            src="/assets/nvidia.jpg"
+            alt=""
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div class="w-full">
+                <p class="font-bold text-white">RTX 3070</p>
+                
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg text-white">R$ 3799.90</p>
+                    <button 
+                    class="bg-blue-500 px-5 rounded add-to-cart-btn"
+                    data-name="RTX 3070"
+                    data-price="3799.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--Fim Produto-->
+        <div class="flex gap-2 w-full">
+            <img
+            src="/assets/radeon.jpg"
+            alt=""
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div class="w-full">
+                <p class="font-bold text-white">Radeon 6000XT</p>
+    
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg text-white">R$ 3729.90</p>
+                    <button 
+                    class="bg-blue-500 px-5 rounded add-to-cart-btn"
+                    data-name="Radeon 6000XT"
+                    data-price="24.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </div>
+<!--FIM MENU-->
+
+<!--Modal Cart-->
+<div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+id="cart-modal"
+>
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4">Endereço de entrega</p>
+            <input
+            type="text"
+            placeholder="Digite seu endereço..."
+            id="address"
+            class="w-full border-2 p-1 rounded my-1"
+            />
+
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+
+    </div>
+
+</div>
+<!--Fim Modal Cart-->
+
+<!--Button Cart Footer-->
+<footer class="w-full bg-orange-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+    <button 
+    class="flex items-center gap-2 text-white font-bold"
+    id="cart-btn"
+    >
+        (<span id="cart-count">0</span>)
+        Veja Meu Carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+</footer>
+<!-- Fim Button Cart Footer-->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="/script.js"></script>
+</body>
+</html>
